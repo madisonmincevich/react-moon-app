@@ -1,3 +1,10 @@
 .App {
   text-align: center;
+  margin: 100px;
+  font-family: "Lora", serif;
+}
+
+.moonApp h1 {
+  margin: 50px;
+  font-family: "Playfair Display", serif;
 }

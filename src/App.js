@@ -1,4 +1,5 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Search from "./Search";
 
 function App() {
@@ -6,13 +7,14 @@ function App() {
     <div className="App">
       <div className="moonApp">
         <div className="container">
-          <h1>Moon Phase</h1>
+          <h1>MOON PHASE</h1>
           <Search defaultCity="London" />
 
           <footer>
             <a
               href="https://github.com/madisonmincevich/react-moon-app"
               target="_blank"
+              rel="noreferrer"
             >
               Open source
             </a>{" "}
@@ -20,6 +22,7 @@ function App() {
             <a
               href="https://maddiemincevich.netlify.app/index.html"
               target="_blank"
+              rel="noreferrer"
             >
               Maddie Mincevich
             </a>
