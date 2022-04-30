@@ -10,7 +10,7 @@ import { WiMoonAltWaningGibbous3 } from "react-icons/wi";
 import "./MoonIcon.css";
 
 export default function MoonIcon(props) {
-  let ready = "false";
+  let ready = false;
 
   const codeMapping = {
     "New Moon": WiMoonAltNew,
