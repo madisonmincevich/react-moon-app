@@ -1,7 +1,11 @@
 .App {
   text-align: center;
-  margin: 100px;
   font-family: "Lora", serif;
+  color: white;
+}
+
+body {
+  background-image: url("https://images.pexels.com/photos/1694000/pexels-photo-1694000.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 }
 
 .moonApp h1 {

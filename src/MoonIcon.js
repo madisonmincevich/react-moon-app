@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React, { useState } from "react";
 import { WiMoonAltNew } from "react-icons/wi";
 import { WiMoonAltFull } from "react-icons/wi";
@@ -10,25 +11,27 @@ import { WiMoonAltWaningGibbous3 } from "react-icons/wi";
 import "./MoonIcon.css";
 
 export default function MoonIcon(props) {
-  let ready = false;
+  let ready = true;
 
-  const codeMapping = {
-    "New Moon": WiMoonAltNew,
-    "Full Moon": WiMoonAltFull,
-    "Waxing Crescent": WiMoonAltWaxingCrescent3,
-    "Waning Crescent": WiMoonAltWaningCrescent4,
-    "First Quarter": WiMoonAltFirstQuarter,
-    "Third Quarter": WiMoonAltThirdQuarter,
-    "Waxing Gibbous": WiMoonAltWaxingGibbous3,
-    "Waning Gibbous": WiMoonAltWaningGibbous3,
-  };
+  const mapping = [
+    { name: "New Moon", component: <WiMoonAltNew /> },
+    { name: "Full Moon", component: <WiMoonAltFull /> },
+    { name: "Waxing Crescent", component: <WiMoonAltWaxingCrescent3 /> },
+    { name: "Waning Crescent", component: <WiMoonAltWaningCrescent4 /> },
+    { name: "First Quarter", component: <WiMoonAltFirstQuarter /> },
+    { name: "Third Quarter", component: <WiMoonAltThirdQuarter /> },
+    { name: "Waxing Gibbous", component: <WiMoonAltWaxingGibbous3 /> },
+    { name: "Waning Gibbous", component: <WiMoonAltWaningGibbous3 /> },
+  ];
 
   if (ready) {
-    return (
-      <div className="moon">
-        <WiMoonAltNew value={codeMapping[props.data]} />
-      </div>
-    );
+    function takeComponent(state) {
+      return state.name === props.data;
+    }
+
+    let lastObj = mapping.find(takeComponent);
+
+    return <div className="moon">{lastObj.component}</div>;
   } else {
     return "Loading";
   }

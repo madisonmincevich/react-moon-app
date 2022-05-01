@@ -5,3 +5,8 @@ ul {
 li {
   display: inline;
 }
+
+h2 {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
