@@ -1,5 +1,4 @@
-import { render } from "@testing-library/react";
-import React, { useState } from "react";
+import React from "react";
 import { WiMoonAltNew } from "react-icons/wi";
 import { WiMoonAltFull } from "react-icons/wi";
 import { WiMoonAltWaxingCrescent3 } from "react-icons/wi";
