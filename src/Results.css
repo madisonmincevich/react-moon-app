@@ -1,5 +1,6 @@
 ul {
   list-style: none;
+  padding-left: 0px;
 }
 
 li {
@@ -9,4 +10,14 @@ li {
 h2 {
   margin-bottom: 0px;
   margin-top: 20px;
+}
+
+span {
+  color: #7b337d;
+}
+
+@media (max-width: 653px) {
+  li {
+    font-size: 10px;
+  }
 }

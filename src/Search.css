@@ -1,1 +1,39 @@
+.search-form {
+  width: 30%;
+  height: 40px;
+}
 
+input {
+  margin-left: 10px;
+  width: 8%;
+  height: 40px;
+}
+
+.submit-btn {
+  background-color: #7b337d;
+  border: 1px solid #7b337d;
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #c874b2;
+  border: 1px solid #c874b2;
+}
+
+@media (max-width: 650px) {
+  .search-form {
+    width: 60%;
+  }
+  input {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1180px) {
+  .search-form {
+    width: 60%;
+  }
+  input {
+    width: 30%;
+  }
+}

@@ -12,3 +12,18 @@ body {
   margin: 50px;
   font-family: "Playfair Display", serif;
 }
+
+.App a {
+  color: #c874b2;
+  text-decoration: none;
+}
+
+.App a:hover {
+  color: #7b337d;
+}
+
+@media (max-width: 653px) {
+  footer {
+    font-size: 13px;
+  }
+}

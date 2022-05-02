@@ -1,13 +1,16 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Search from "./Search";
+import { BsMoonStars } from "react-icons/bs";
 
 function App() {
   return (
     <div className="App">
       <div className="moonApp">
         <div className="container">
-          <h1>MOON PHASE</h1>
+          <h1>
+            MOON PHASE <BsMoonStars />
+          </h1>
           <Search defaultCity="London" />
 
           <footer>

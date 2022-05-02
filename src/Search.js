@@ -45,10 +45,11 @@ export default function Search(props) {
             <form onSubmit={handleSubmit}>
               <input
                 type="search"
+                className="search-form"
                 placeholder="Search by city..."
                 onChange={handleCityChange}
               ></input>
-              <input type="submit"></input>
+              <input type="submit" className="submit-btn"></input>
             </form>
             <Results data={moonData} />
           </div>
