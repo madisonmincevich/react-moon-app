@@ -9,7 +9,7 @@ function App() {
       <div className="moonApp">
         <div className="container">
           <h1>
-            MOON PHASE <BsMoonStars />
+            TODAY'S MOON PHASE <BsMoonStars />
           </h1>
           <Search defaultCity="London" />
 
