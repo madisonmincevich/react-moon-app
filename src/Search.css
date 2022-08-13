@@ -12,6 +12,7 @@ input {
 .submit-btn {
   background-color: #7b337d;
   border: 1px solid #7b337d;
+  width: 10%;
   color: white;
 }
 
@@ -32,6 +33,10 @@ input {
 @media (max-width: 1180px) {
   .search-form {
     width: 60%;
+  }
+
+  .submit-btn {
+    width: 20%;
   }
   input {
     width: 30%;
