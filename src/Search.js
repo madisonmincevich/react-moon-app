@@ -22,7 +22,7 @@ export default function Search(props) {
   }
 
   function Call() {
-    const apiKey = "8913678c8d7a4e299d6214300221904";
+    const apiKey = "7a4dd78f52734e9fbb515144221308";
     const apiUrl = `https://api.weatherapi.com/v1/astronomy.json?key=${apiKey}&q=${city}`;
     axios.get(apiUrl).then(showData);
   }
